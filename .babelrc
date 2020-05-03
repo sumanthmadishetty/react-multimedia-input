@@ -1,0 +1,27 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": true,
+        "shippedProposals": true,
+        "modules": false,
+        "targets": {
+          "ie": 9
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-export-namespace-from",
+    [
+      "module-resolver",
+      {
+        "root": ["./lib"]
+      }
+    ]
+  ]
+}
